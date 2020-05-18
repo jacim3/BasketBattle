@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="vertical"
+    android:layout_width="380dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/round_coner">
+
+    <!-- 타이틀바 -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/round_coner">
+
+        <TextView
+            android:id="@+id/titleView"
+            android:text="Image Viewer"
+            android:textSize="17sp"
+            android:textColor="#383838"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:background="@drawable/round_coner"
+            android:textStyle="italic"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btn_Zoom_Close"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:elevation="0dp"
+            android:background="@android:drawable/ic_menu_close_clear_cancel"/>
+    </LinearLayout>
+    <!-- //end 타이틀바 -->
+
+    <!-- Notice -->
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/round_coner">
+        
+        <ImageView
+            android:id="@+id/iv_ZoomIn"
+            android:layout_width="362dp"
+            android:layout_height="362dp"/>
+    </LinearLayout>
+    <!-- Notice -->
+
+</LinearLayout>

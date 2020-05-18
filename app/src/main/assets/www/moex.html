@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .aaa{
+            margin-top: 60px;
+        }
+        .fighting{
+            border-radius: 30%;
+            width: 200px;
+        }
+        #imgLeft{
+            position: relative;
+            top: 80px;
+            left: 5px;
+            z-index: 1;
+        }
+
+        #imgLogo{
+            position: absolute;
+            top: 150px;
+            left: 100px;
+            z-index: 10;
+            display: none;
+        }
+
+        #imgRight{
+            position: absolute;
+            left: 200px;
+
+
+        }
+
+        .fist{
+            position: absolute;
+            width: 100px;
+            z-index: 15;
+        }
+        .fist_Left{
+
+            left: 120px;
+            top: 110px;
+            display: none;
+        }
+
+        .fist_Right{
+
+            left: 200px;
+            top: 215px;
+            display: none;
+        }
+
+        button{
+            position: absolute;
+            width: 300px;
+            top: 520px;
+            left: 55px;
+            display: none;
+        }
+        #crown{
+            position: absolute;
+            top: 50px;
+            left: 125px;
+            display: none;
+            z-index: 2;
+        }
+        #logo{
+            color: red;
+            position: absolute;
+            top: 480px;
+            left: 115px;
+            display: none;
+            font-family: serif;
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+
+    <script src="jquery_ui/external/jquery/jquery.js"></script>
+    <script src="jquery_ui/jquery-ui.js"></script>
+    <script src="confetti/confetti.js"></script>
+
+    <script>
+
+            var obj;
+            const LEFT = 1, RIGHT =3;
+            var ID = new Array(), title = new Array(), image = new Array(), url = new Array(), price = new Array(), time = new Array();
+            var winner = "";
+            var bool = true;
+            var isFinished = false;
+            var cursorL = 0;
+            var cursorR = 1;
+            var mLastClick;
+            var press;
+
+            $(function(){
+
+                mLastClick = new Date().getTime();
+                coloseum();
+            });
+
+            function init(){
+                  setTimeout(function(){
+                     $('#imgLeft').attr("src",image[ID[0]]);
+                     $('#imgRight').attr("src",image[ID[1]]);
+                     $( "#imgLeft" ).animate({top:'0'},2000);
+                     $( "#imgRight" ).animate({bottom:'200'},2000);
+
+
+                     setTimeout(function(){
+                        $('#imgLogo').toggle( "bounce", { times: 3 }, "slow" );
+                            press = setInterval(function(){
+                            if(ID.length > 0){
+                                $('#logo').fadeIn('slow');
+                                $('#logo').fadeOut('slow');
+                             }
+                            },1500);
+                     },1500);
+
+                });
+            }
+                function shuffle(arr){
+                    if(arr instanceof Array){
+                        var len = arr.length;
+                        if(len == 1) return arr;
+                        var i = len*2;
+
+                        while(i > 0){
+                            var idx1 = Math.floor(Math.random()* len);
+                            var idx2 = Math.floor(Math.random()* len);
+                            if(idx1 == idx2) continue;
+                            var temp = arr[idx1];
+                            arr[idx1] = arr[idx2];
+                            arr[idx2] = temp;
+                            i--;
+                        }
+                    }else{
+                        alert("No Array Object");
+                    }
+                    init();
+                    return arr;
+                }
+
+                function coloseum(){
+                    $('.fighting').click(function(index){
+                      index = $(this).index();
+                      clearInterval(press);
+                      $('#logo').fadeOut();
+                      var mCurrent = new Date().getTime();
+                      if(mCurrent - mLastClick > 2000){
+                          $(this).effect('bounce',{times:1},'slow');
+                          $('#crown').effect('bounce',{times:1},'slow');
+
+                          switch(index){
+                            case LEFT:
+                                $('.fist_Left').css('display','block');
+                                $('.fist_Right').css('display','none');
+                                if(cursorL <= cursorR){
+                                    cursorR++;
+                                }else{
+                                    cursorR = cursorL+1;
+                                }
+
+                                $('#imgLogo').effect('bounce',function(){
+                                    if(cursorR >= ID.length)
+                                        $(this).css('display','none');
+                                });
+
+                                $('.fist_Left').animate({
+                                    left:'200',top:'215'},
+                                    2000,'easeOutElastic',function(){
+                                    $(this).animate({left:'110',top:'150'},1000,'easeOutElastic');
+                                });
+
+                                $('#imgRight').toggle('explode',function(){
+                                    if(cursorR < ID.length)
+                                        $(this).attr("src",image[ID[cursorR]]).fadeIn('slow');
+                                });
+                                /*alert('R='+cursorR+", L="+cursorL+"///"+ID.length);*/
+                                if(cursorR >= (ID.length)){
+
+                                    setTimeout(function(){
+                                        $('.fist_Left').css('display','none');
+                                    },1000);
+                                    //$('#imgRight').css('display','none');
+                                    winner = url[ID[cursorL]];
+                                    $('#imgLeft').animate({
+                                        width:'300',left:'55',top:'115'
+                                    },2000,function(){
+                                        $('#crown').toggle('bounce',{ times: 10 });
+                                        setTimeout(function(){
+                                            confetti.start();
+                                            $('button').toggle('bounce');
+                                        },500);
+                                    });
+                                }
+                                break;
+                            case RIGHT:
+                                $('.fist_Right').css('display','block');
+                                $('.fist_Left').css('display','none');
+                                if(cursorL >= cursorR){
+                                    cursorL++;
+                                }else{
+                                    cursorL = cursorR+1;
+                                }
+
+                                    $('#imgLogo').effect('bounce',function(){
+                                        if(cursorL >= ID.length)
+                                        $(this).css('display','none');
+                                    });
+
+
+                                $('.fist_Right').animate({
+                                 left:'90',top:'145'
+                                },2000,'easeOutElastic',function(){
+                                    $(this).animate({left:'200',top:'215'},1000,'easeOutElastic');
+                                });
+                                $('#imgLeft').toggle('explode',function(){
+                                    if(cursorL < ID.length)
+                                        $(this).attr("src",image[ID[cursorL]]).fadeIn('slow');
+                                });
+                                /*alert('R='+cursorR+", L="+cursorL+"///"+ID.length);*/
+                                if(cursorL >= (ID.length)){
+
+                                    //$('#imgLeft').css('display','none');
+                                    setTimeout(function(){
+                                        $('.fist_Right').css('display','none');
+                                    },1000);
+
+                                    winner = url[ID[cursorR]];
+                                    $('#imgRight').animate({
+                                        width:'300',left:'55',top:'145'
+                                    },2000,function(){
+                                        $('#crown').toggle('bounce',{ times: 10 });
+                                        setTimeout(function(){
+                                            confetti.start();
+                                            $('button').toggle('bounce');
+                                        },500);
+                                    });
+
+                                }
+                                break;
+                            default :
+                                break;
+                      }
+                      $('.on_Finish').submit(function(e){
+                        e.preventDefault();
+                      });
+                    }
+                    mLastClick = mCurrent;
+                });
+            }
+    </script>
+</head>
+<body>
+    <div class="aaa">
+    </div>
+
+    <img id='imgLeft' class="fighting">
+    <img id="imgLogo" src="images/vs.png" width="200">
+    <img id='imgRight' class="fighting">
+
+    <form class="on_Finish" onsubmit="window.myCall.getWinner(winner); return true;">
+        <button class="btn-danger btn-lg btn-radius" type="submit">선택 완료하기</button>       <!--지정한 해당 버튼을 누를 시 Native 의 메서드를 실행하기 시작한다.-->
+    </form>
+    <div>
+        <img class="fist fist_Left" src="images/fist_left.png">
+        <img class="fist fist_Right" src="images/fist_right.png">
+    </div>
+
+    <img id="crown" src="images/crown.png" width="150">
+    <p id="logo">Choose your Item</p>
+</body>
+</html>

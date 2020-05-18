@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lay_Fame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foreground="@drawable/shape_window_dim">
+
+    <LinearLayout
+        android:id="@+id/fame_Title_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/round_coner"
+        android:elevation="10dp">
+
+        <TextView
+            android:id="@+id/fame_Title"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:paddingStart="35dp"
+            android:text="Items"
+            android:textAlignment="textStart"
+            android:textColor="#3D3D3D"
+            android:textSize="15sp"
+            android:textStyle="italic"
+
+            tools:ignore="RtlCompat"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/iv_Delete"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:src="@android:drawable/ic_menu_delete"/>
+
+        <ImageView
+            android:id="@+id/iv_Left"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:rotation="90"
+            android:layout_marginStart="15dp"
+            android:src="@android:drawable/ic_menu_more"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/iv_Right"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:rotation="270"
+            android:src="@android:drawable/ic_menu_more" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lV_Fame"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:divider="@null"
+        android:paddingEnd="5dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fame_Title_Layout" />
+
+    <LinearLayout
+        android:id="@+id/snack_View2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
