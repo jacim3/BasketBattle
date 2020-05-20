@@ -10,7 +10,7 @@
 
 <img src="https://user-images.githubusercontent.com/60813834/82292567-1ad64800-99e6-11ea-90e9-afa55efa4d91.png" width=40%>
 ◈ 페이지 이동<br><br>
-&nbsp;&nbsp;&nbsp;&nbsp;- Android Spinner를 사용, 앱에 등록되어 있는 쇼핑몰 페이지 중 하나를 선택하여 이동 가능.<br>
++ Android Spinner를 사용, 앱에 등록되어 있는 쇼핑몰 페이지 중 하나를 선택하여 이동 가능.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;- 선택 후 'OK'버튼을 누르면, Android WebView가 작동하여, 웹 페이지 출력
 <br><br><br>
 
