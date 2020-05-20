@@ -45,6 +45,6 @@ Android에 전달.
 
 <img src="https://user-images.githubusercontent.com/60813834/82292583-20cc2900-99e6-11ea-84d4-701aec0e137d.png" width=40%>
 ◈ 최종 선택된 상품<br><br>
-&nbsp;&nbsp;&nbsp;&nbsp;- 최종 선택이 완료된 경우, 1번DB(Registered Goods)에 있는 내용을 2번DB(Defeated Goods)에 옮기고 1번DB의 내용은 전부 삭제.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;- 최종 선택이 완료된 경우, 1번 DB(Registered Goods)에 있는 내용을 2번 DB(Defeated Goods)에 옮기고 1번DB의 내용은 전부 삭제.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;- 2번DB에 있는 내용 중 Web에서 보내진 최종 선택 상품 정보를 가진 데이터를 3번 DB(Winners)로 옮기며, 옮겨진 데이터는 2번 DB에서 삭제
 <br><br><br>
