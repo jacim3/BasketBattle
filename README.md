@@ -6,6 +6,7 @@
 
 <img src="https://user-images.githubusercontent.com/60813834/82292564-19a51b00-99e6-11ea-9554-085c511eb5a5.png" width=40%>
 ◈ 메인 화면<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;- 네비게이션 메뉴를 열어서 다른 프래그먼트 페이지로 넘어가거나, 홈쇼핑 사이트로 이동이 가능. 
 <br><br>
 
 <img src="https://user-images.githubusercontent.com/60813834/82292567-1ad64800-99e6-11ea-90e9-afa55efa4d91.png" width=40%>
