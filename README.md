@@ -5,12 +5,14 @@
 <br><br><br>
 
 <img src="https://user-images.githubusercontent.com/60813834/82292564-19a51b00-99e6-11ea-9554-085c511eb5a5.png" width=40%>
-◈ 메인 화면<br>
+◈ 메인 화면<br><br>
  &nbsp;&nbsp;&nbsp;&nbsp;- 네비게이션 메뉴를 열어서 다른 프래그먼트 페이지로 넘어가거나, 홈쇼핑 사이트로 이동이 가능. 
 <br><br><br>
 
 <img src="https://user-images.githubusercontent.com/60813834/82292567-1ad64800-99e6-11ea-90e9-afa55efa4d91.png" width=40%>
-◈ 페이지 이동<br>
+◈ 페이지 이동<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;- Android Spinner를 사용, 앱에 등록되어 있는 쇼핑몰 페이지 중 하나를 선택하여 이동 가능.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;- 선택 후 'OK'버튼을 누르면, Android WebView가 작동하여, 웹 페이지 출력
 <br><br><br>
 
 <img src="https://user-images.githubusercontent.com/60813834/82292570-1b6ede80-99e6-11ea-89d3-e09dcddf827f.png" width=40%>
