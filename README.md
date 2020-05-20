@@ -41,7 +41,8 @@
 <img src="https://user-images.githubusercontent.com/60813834/82292579-1f9afc00-99e6-11ea-8526-81961330282e.png" width=40%>
 ◈ 선택 완료<br><br>
 &nbsp;&nbsp;&nbsp;&nbsp;- 선택이 모두 완료되어 최종적으로 하나의 상품만 남을 때 발생<br>
-&nbsp;&nbsp;&nbsp;&nbsp;- 하단의 추가로 생성된 버튼을 누를때에만, 최종 결과가 안드로이드에 반영되어 최종 선택된 상품에 대한 정보가 Android에 전달됨.
+&nbsp;&nbsp;&nbsp;&nbsp;- 하단의 추가로 생성된 버튼을 누를때에만, 최종 결과가 안드로이드에 반영되어 최종 선택된 상품에 대한 정보가 
+Android에 전달 됨.
 <br><br><br>
 
 <img src="https://user-images.githubusercontent.com/60813834/82292583-20cc2900-99e6-11ea-84d4-701aec0e137d.png" width=40%>
