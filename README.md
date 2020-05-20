@@ -22,7 +22,9 @@
 
 <img src="https://user-images.githubusercontent.com/60813834/82292574-1d38a200-99e6-11ea-9bed-f49c255312f3.png" width=40%>
 ◈ 저장된 상품 확인 ( DB + 리스트뷰 )<br><br>
-&nbsp;&nbsp;&nbsp;&nbsp;- 'Registered Goods', 'Defeated Goods', 'Winners' 라는 이름과 함께<br>
+&nbsp;&nbsp;&nbsp;&nbsp;- <br>
+&nbsp;&nbsp;&nbsp;&nbsp;- 리스트뷰는 'Registered Goods', 'Defeated Goods', 'Winners' 라는 이름과 함께 출력되며, 
+사용자의 'Swipe'동작이나 버튼입력으로 제어 가능<br>
 
 &nbsp;&nbsp;&nbsp;&nbsp;- 처음 등록된 상품은 'Registerd Goods'로서, 1번DB에 저장되어 ListView를 통하여 출력.  
 <br><br><br>
@@ -30,7 +32,8 @@
 <img src="https://user-images.githubusercontent.com/60813834/82292577-1e69cf00-99e6-11ea-86ce-c4f24a0a5848.png" width=40%>
 ◈ 상품 선택 ( Web Page ) <br><br>
 &nbsp;&nbsp;&nbsp;&nbsp;- 상품 등록을 2개 이상 하였을 경우에만 활성화.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;- Android의 WebView를 통하여, 안드로이드 프로젝트 내 index.html 가 동작하게 함<br>
+&nbsp;&nbsp;&nbsp;&nbsp;- Android의 DB에 있는 정보를 JSON객체로 파싱하여 WebPage에 보냄.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;- Android의 WebView를 통하여, 안드로이드 프로젝트 내 WebPage가 동작하게 함<br>
 &nbsp;&nbsp;&nbsp;&nbsp;- 사용자의 터치입력에 반응하여 JQuery의 스크립트와 JQuery Ui의 애니메이션 기능이 작동<br>
 &nbsp;&nbsp;&nbsp;&nbsp;- 선택한 상품은 남게 되고, 선택받지 못하면 버려져서, 최종으로 한개가 남을때까지 알고리즘이 수행
 <br><br><br>
@@ -38,8 +41,7 @@
 <img src="https://user-images.githubusercontent.com/60813834/82292579-1f9afc00-99e6-11ea-8526-81961330282e.png" width=40%>
 ◈ 선택 완료<br><br>
 &nbsp;&nbsp;&nbsp;&nbsp;- 선택이 모두 완료되어 최종적으로 하나의 상품만 남을 때 발생<br>
-&nbsp;&nbsp;&nbsp;&nbsp;- 하단의 생성된 버튼을 누르면, 최종 결과가 안드로이드에 반영.
-
+&nbsp;&nbsp;&nbsp;&nbsp;- 하단의 추가로 생성된 버튼을 누를때에만, 최종 결과가 안드로이드에 반영되어 최종 선택된 상품에 대한 정보가 Android에 전달됨.
 <br><br><br>
 
 <img src="https://user-images.githubusercontent.com/60813834/82292583-20cc2900-99e6-11ea-84d4-701aec0e137d.png" width=40%>
