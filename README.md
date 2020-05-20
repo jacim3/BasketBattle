@@ -16,8 +16,8 @@
 
 <img src="https://user-images.githubusercontent.com/60813834/82292570-1b6ede80-99e6-11ea-89d3-e09dcddf827f.png" width=40%>
 ◈ 데이터 저장(등록)확인창<br><br>
-&nbsp;&nbsp;&nbsp;&nbsp;- 여러 상품들을 둘러본 후 원하는 상품에 등록 버튼을 누르면, 해당 데이터를 DB(SQLite)에 저장. 
-&nbsp;&nbsp;&nbsp;&nbsp;- Java의 JSoup 라이브러리를 사용, 웹 페이지의 CSS 정보를 읽어옴으로써 작동하는 원리<br>
+&nbsp;&nbsp;&nbsp;&nbsp;- 여러 상품들을 둘러본 후 원하는 상품에 등록 버튼을 누르면, 해당 데이터를 DB(SQLite)에 저장.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;- Java의 JSoup 라이브러리를 사용, 웹 페이지의 CSS 정보를 읽어옴으로써 작동하는 원리
 <br><br><br>
 
 <img src="https://user-images.githubusercontent.com/60813834/82292574-1d38a200-99e6-11ea-9bed-f49c255312f3.png" width=40%>
