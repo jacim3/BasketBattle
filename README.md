@@ -22,7 +22,7 @@
 
 <img src="https://user-images.githubusercontent.com/60813834/82292574-1d38a200-99e6-11ea-9bed-f49c255312f3.png" width=40%>
 ◈ 저장한 상품들 ( DB + 리스트뷰 )<br><br>
-&nbsp;&nbsp;&nbsp;&nbsp;- DB는 총 3개가 생성되어 사용자의 Swipe 동작이나 버튼 입력에 따라 각각의 DB에 저장된 내용을
+&nbsp;&nbsp;&nbsp;&nbsp;- DB는 총 3개가 생성되어 사용자의 Swipe 동작이나 버튼 입력에 따라 각각의 DB에 저장된 내용을<br>
 'Registered Goods', 'Defeated Goods', 'Winners'라는 이름과 함께 리스트뷰로 따로따로 출력.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;- 
 <br><br><br>
