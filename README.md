@@ -22,11 +22,9 @@
 
 <img src="https://user-images.githubusercontent.com/60813834/82292574-1d38a200-99e6-11ea-9bed-f49c255312f3.png" width=40%>
 ◈ 저장된 상품 확인 ( DB + 리스트뷰 )<br><br>
-&nbsp;&nbsp;&nbsp;&nbsp;- <br>
-&nbsp;&nbsp;&nbsp;&nbsp;- 리스트뷰는 'Registered Goods', 'Defeated Goods', 'Winners' 라는 이름과 함께 출력되며, 
-사용자의 'Swipe'동작이나 버튼입력으로 제어 가능<br>
-
-&nbsp;&nbsp;&nbsp;&nbsp;- 처음 등록된 상품은 'Registerd Goods'로서, 1번DB에 저장되어 ListView를 통하여 출력.  
+&nbsp;&nbsp;&nbsp;&nbsp;- 리스트뷰는 각각의 'Registered Goods', 'Defeated Goods', 'Winners' 라는 이름을 가진 상태로 출력되며, 
+사용자의 'Swipe'동작이나 버튼입력으로 보고자 하는 데이터를 가진 DB를 선택 가능<br>
+&nbsp;&nbsp;&nbsp;&nbsp;- 등록된 상품은 'Registerd Goods'로서, 무조건 1번DB에 저장되어 ListView를 통하여 출력.  
 <br><br><br>
 
 <img src="https://user-images.githubusercontent.com/60813834/82292577-1e69cf00-99e6-11ea-86ce-c4f24a0a5848.png" width=40%>
