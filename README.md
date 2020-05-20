@@ -29,10 +29,10 @@
 
 <img src="https://user-images.githubusercontent.com/60813834/82292577-1e69cf00-99e6-11ea-86ce-c4f24a0a5848.png" width=40%>
 ◈ 상품 선택 ( Web Page ) <br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;- 상품 등록을 2개 이상 하였을 경우에만 활성화.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;- Android의 WebView를 통하여, 안드로이드 프로젝트 내 index.html 가 동작하게 함<br>
-&nbsp;&nbsp;&nbsp;&nbsp;- <br>
-&nbsp;&nbsp;&nbsp;&nbsp;- 상품 등록을 2개 이상 하였을 경우 활성화.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;- 선택한 상품은 남게 되고, 선택받지 못하면 버려져서, 최종으로 한개가 남을때까지 반복
+&nbsp;&nbsp;&nbsp;&nbsp;- 사용자의 터치입력에 반응하여 JQuery의 스크립트와 JQuery Ui의 애니메이션 기능이 작동<br>
+&nbsp;&nbsp;&nbsp;&nbsp;- 선택한 상품은 남게 되고, 선택받지 못하면 버려져서, 최종으로 한개가 남을때까지 알고리즘이 수행
 <br><br><br>
 
 <img src="https://user-images.githubusercontent.com/60813834/82292579-1f9afc00-99e6-11ea-8526-81961330282e.png" width=40%>
