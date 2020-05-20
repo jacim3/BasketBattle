@@ -41,12 +41,12 @@
 <img src="https://user-images.githubusercontent.com/60813834/82292579-1f9afc00-99e6-11ea-8526-81961330282e.png" width=40%>
 ◈ 선택 완료<br><br>
 &nbsp;&nbsp;&nbsp;&nbsp;- 선택이 모두 완료되어 최종적으로 하나의 상품만 남을 때 발생<br>
-&nbsp;&nbsp;&nbsp;&nbsp;- 하단의 생성된 버튼을 누, 최종 결과가 안드로이드에 반영되어 최종 선택된 상품에 대한 정보가 
-Android에 전달 됨.
+&nbsp;&nbsp;&nbsp;&nbsp;- 하단의 생성된 버튼을 누르면, 최종 결과가 안드로이드에 반영되어 최종 선택된 상품에 대한 정보가 
+Android에 전달.
 <br><br><br>
 
 <img src="https://user-images.githubusercontent.com/60813834/82292583-20cc2900-99e6-11ea-84d4-701aec0e137d.png" width=40%>
 ◈ 최종 선택된 상품<br><br>
 &nbsp;&nbsp;&nbsp;&nbsp;- 최종 선택이 완료된 경우, 1번DB에 있는 내용을 2번DB에 옮기고 1번DB의 내용은 전부 삭제.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;- 2번DB에 있는 내용을 3번DB에 옮기고 1번DB의 내용은 전부 삭제.
+&nbsp;&nbsp;&nbsp;&nbsp;- 2번DB에 있는 내용 중 Web에서 보내진 최종 선택 상품 정보를 가진 데이터를 3번 DB로 옮기며, 옮겨진 해당 데이터는 2번 DB에서 
 <br><br><br>
