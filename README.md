@@ -1,7 +1,8 @@
 - Tech Stack : Java, Android, JSoup, SQLite, HTML, CSS, JQuery
 
 홈쇼핑 사이트로 이동하여, 원하는 상품을 앱에 간편하게 저장하여 등록하며, 필요하다면 여러개의 상품 중 하나의 상품의 선택을 도와줄 수 있는 Web 기반 안드로이드 Native 어플리케이션 입니다.<br><br>
-<iframe width="640" height="360" src="https://www.youtube.com/embed/6Az2cNU7gUw" frameborder="0" gesture="media" allowfullscreen=""></iframe>
+
+[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://youtu.be/vt5fpE0bzSY)
 
 <iframe src='https://gfycat.com/ifr/SpryInconsequentialDrake' frameborder='0' scrolling='no' allowfullscreen width='640' height='1182'></iframe>
 
