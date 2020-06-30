@@ -2,6 +2,7 @@
 
 홈쇼핑 사이트로 이동하여, 원하는 상품을 앱에 간편하게 저장하여 등록하며, 필요하다면 여러개의 상품 중 하나의 상품의 선택을 도와줄 수 있는 Web 기반 안드로이드 Native 어플리케이션 입니다.<br><br>
 
+https://gfycat.com/spryinconsequentialdrake
 
 <img src="https://user-images.githubusercontent.com/60813834/82292557-1873ee00-99e6-11ea-80c7-bba239e40876.png" width=40%>
 ◈ 스플래시 화면         
