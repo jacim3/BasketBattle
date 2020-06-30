@@ -4,9 +4,7 @@
 ![Alt Text](https://gfycat.com/ifr/SpryInconsequentialDrake)
 
 <video controls="controls">
-  <source type="video/mp4" src="filename.mp4"></source>
-  <source type="video/webm" src="filename.webm"></source>
-  <p>Your browser does not support the video element.</p>
+  <source type="video/mp4" src="https://gfycat.com/ifr/SpryInconsequentialDrake"></source>
 </video>
 
 <img src="https://user-images.githubusercontent.com/60813834/82292557-1873ee00-99e6-11ea-80c7-bba239e40876.png" width=40%>
